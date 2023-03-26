@@ -7,4 +7,4 @@ When: User clicks on Adidas Shoes
 Then: Shoes displayed
 
 Scenario Outline: Feature2
-Given: 
+Given: Typing from Github
