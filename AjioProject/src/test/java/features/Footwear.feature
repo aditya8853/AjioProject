@@ -1,4 +1,4 @@
-#In Main branch
+#In Feature1 branch
 
 Scenario: Footwear Feature
 Given: User is on Footwear Page
