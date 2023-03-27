@@ -8,5 +8,3 @@ Then: Shoes displayed
 
 Scenario: Second Feature
 Given : 
-
-Scenario: Third Feature
