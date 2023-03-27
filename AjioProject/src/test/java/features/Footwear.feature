@@ -6,3 +6,5 @@ Given: User is on Footwear Page
 When: User clicks on Adidas Shoes
 Then: Shoes displayed
 
+Scenario: Second Feature
+Given : 
