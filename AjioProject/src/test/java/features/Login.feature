@@ -17,6 +17,7 @@ Given user is on bag page.
 When User select multipal item And go for place order. 
 Then User is able to proced for payment And verify the addition of all products.
 
+
 Scenario: Verify the quantity of products
 Given: User is on mens fashion page 
 When: User select the USPA shirt and Leecooper jens
