@@ -13,4 +13,4 @@ Given User is on Foot wear page
 And User Select Gender Men and Category is Sports
 When User Select First Shoes
 And Select Size Chart
-Then Size Chart Shoes the Sizes in Ascending Order
+Then Size Chart Shoes the Sizes 
