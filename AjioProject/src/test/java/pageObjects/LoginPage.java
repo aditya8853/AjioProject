@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 public class LoginPage {
 	public WebDriver driver;
 	
-	LoginPage(WebDriver driver) 
+	public LoginPage(WebDriver driver) 
 	{
 		this.driver=driver;
 	}
@@ -61,7 +61,7 @@ public class LoginPage {
 		return Bag;
 	}
 	
-	@FindBy(xpath="(//a[@href='/selfcare'])[1]")
+	@FindBy(xpath="//span[contains(text(),'Sign In / Join AJIO')]")
 	private WebElement SignInBtn;
 	public WebElement SignInBtn()
 	{
