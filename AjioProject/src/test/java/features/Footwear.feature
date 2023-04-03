@@ -1,6 +1,6 @@
 #Author:saurabhsawale7875@gmail.com
 
-Feature: Verify Filter Functionality of Foot wear Page
+Feature: Verify Filter Functionality on Foot wear Page
 
 Scenario: Verify Filter Functionality in Men Category
 Given User is on Footwear page
