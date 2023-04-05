@@ -1,6 +1,6 @@
 #Author: yogeshthosar5522@gmail.com
 
-Feature: List of scenarios.
+Feature: Login Feature.
 Scenario: verification of add to cart functionality
 Given User is on USPA shirt selection page 
 When User select Shirt and select size of the shirt 
