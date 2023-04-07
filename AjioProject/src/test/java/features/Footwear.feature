@@ -1,14 +1,14 @@
 #Author:saurabhsawale7875@gmail.com
 
-Feature: Verify Filter Functionality on Foot wear Page
+Feature: Verify Filter Functionality on Footwear Page
 
-Scenario: Verify Filter Functionality in Men Category
+Scenario: Verifying Filter Functionality in Mens Category
 Given User is on Footwear page
 When User Selects the Gender Men, Category Formal and & Brand as Action
-Then Verify all Action shoes are displayed
+Then Verify all shoes are displayed are of Action Brand
 
 
-Scenario: Verify the Size Chart
+Scenario: Verifying the Size Chart
 Given User is on Footwear page
 When User Select Gender Men and Category as Sports
 And Select Size Chart for particular shoes
