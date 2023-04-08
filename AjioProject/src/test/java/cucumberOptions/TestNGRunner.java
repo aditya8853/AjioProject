@@ -1,8 +1,15 @@
 package cucumberOptions;
 
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
@@ -24,8 +31,18 @@ public class TestNGRunner extends AbstractTestNGCucumberTests
 		driver.get("https://www.ajio.com/");
 		
 		
-		lp.SignInBtn().click();
-		
+		//lp.SignInBtn().click();
+		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(20));
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//a[@target='_self'])[10]")));
+		driver.findElement(By.xpath("(//a[@target='_self'])[10]")).click();
+		//alternate solution
+//		wait.until(ExpectedConditions. invisibilityOfElementLocated(By.id("overlay element id")));
+//		//fix with JavaScript executor
+//		WebElement m = driver.findElement(By.xpath("(//a[@target='_self'])[10]"));
+//		
+//		JavascriptExecutor jse = (JavascriptExecutor) driver;
+//		
+//		jse.executeScript("arguments[0].click();", m);
 		
 	}
 
