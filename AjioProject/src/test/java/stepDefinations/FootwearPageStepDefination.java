@@ -33,7 +33,7 @@ public class FootwearPageStepDefination
 		footwearPage.FootWear().click();
 	}
 	
-	/*@When("^User Selects the Gender Men, Category Formal and & One Brand$")
+	@When("^User Selects the Gender Men, Category Formal and & One Brand$")
 	public void user_selects_the_gender_men_category_formal_and_one_brand()
 	{ 
 		
@@ -63,7 +63,7 @@ public class FootwearPageStepDefination
 	 public void select_size_chart_for_particular_shoes()
 	 {
 		 
-	 }*/
+	 }
 	
 
 }
