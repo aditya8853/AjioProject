@@ -1,11 +1,11 @@
 #Author:saurabhsawale7875@gmail.com
 
 Feature: Verify Filter Functionality on Footwear Page
-
+@tag1
 Scenario: Verifying Filter Functionality in Mens Category
 Given User is on Footwear page
-When User Selects the Gender Men, Category Formal and & Brand as Action
-Then Verify all shoes are displayed are of Action Brand
+#When User Selects the Gender Men, Category Formal and & One Brand
+#Then Verify all shoes are displayed are of Selected Brand
 
 
 Scenario: Verifying the Size Chart

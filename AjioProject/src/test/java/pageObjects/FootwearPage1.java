@@ -12,7 +12,7 @@ public class FootwearPage1 {
 		this.driver=driver;
 	}
 	
-	@FindBy(xpath="//span[contains(text(),'FOOTWEAR')])[1]") 
+	@FindBy(xpath="//li[contains(@class,'catg active-text')]//div[contains(@class,'column column-1')]//span[contains(text(),'FOOTWEAR')]") 
 	private WebElement footwear;
 	
 	public WebElement FootWear() 
@@ -92,7 +92,7 @@ public class FootwearPage1 {
 		return sandals;
 	}
 	
-	@FindBy(xpath="(//div[text()='MORE'])[1]")
+	@FindBy(xpath="(//div[text()='MORE'])[1]") //tag#id=div#verticalsizegroupformat
 	private WebElement moreCategory;
 	
 	public WebElement MoreCategory()
@@ -117,7 +117,7 @@ public class FootwearPage1 {
 		return below500;
 	}
 	
-	@FindBy(css="[class$='Rs.500-1000']")
+	@FindBy(css="[class$='1000']")
 	private WebElement bet500_1000;
 	
 	public WebElement Bet500_1000()
@@ -181,45 +181,6 @@ public class FootwearPage1 {
 		return brands;
 	}
 	
-	@FindBy(css="[class$='5elements By Radhika Gupta']")
-	private WebElement elementsByRadhikaGupta;
-	
-	public WebElement elemntsByRadhikaGupta()
-	{
-		return elementsByRadhikaGupta;
-	}
-	
-	@FindBy(css="[class$='7-10']")
-	private WebElement s7_10;
-	
-	public WebElement S7_10()
-	{
-		return s7_10;
-	}
-	
-	@FindBy(css="[class$='AARAVINS']")
-	private WebElement aaravins;
-	
-	public WebElement AARAVINS()
-	{
-		return aaravins;
-	}
-	
-	@FindBy(css="[class$='AARGENT']")
-	private WebElement aargent;
-	
-	public WebElement AARGENT()
-	{
-		return aargent;
-	}
-	
-	@FindBy(css="[class$='ABROS']")
-	private WebElement abros;
-	
-	public WebElement ABROS()
-	{
-		return abros;
-	}
 	
 	@FindBy(xpath="(//div[text()='MORE'])[2]")
 	private WebElement moreBrands;
@@ -333,45 +294,7 @@ public class FootwearPage1 {
 		return colors;
 	}
 	
-	@FindBy(css="[class$='Aqua']")
-	private WebElement aqua;
 	
-	public WebElement Aqua()
-	{
-		return aqua;
-	}
-	
-	@FindBy(css="[class$='Beige']")
-	private WebElement beige;
-	
-	public WebElement Beige()
-	{
-		return beige;
-	}
-	
-	@FindBy(css="[class$='Black']")
-	private WebElement black;
-	
-	public WebElement Black()
-	{
-		return black;
-	}
-	
-	@FindBy(css="[class$='Blue']")
-	private WebElement blue;
-	
-	public WebElement Blue()
-	{
-		return blue;
-	}
-	
-	@FindBy(css="[class$='Bronze']")
-	private WebElement bronze;
-	
-	public WebElement Bronze()
-	{
-		return bronze;
-	}
 	
 	@FindBy(xpath="(//div[text()='MORE'])[5]")
 	private WebElement moreColors;
@@ -437,7 +360,7 @@ public class FootwearPage1 {
 		return moreSize;
 	}
 	
-	@FindBy(xpath="[class$='arwdwn']")
+	@FindBy(css="[class$='arwdwn']")
 	private WebElement moreFilters;
 	
 	public WebElement MoreFilters()
@@ -445,7 +368,7 @@ public class FootwearPage1 {
 		return moreFilters;
 	}
 	
-	@FindBy(xpath="[class$='length']")
+	@FindBy(css="[class$='length']")
 	private WebElement itemsFound;
 	
 	public WebElement ItemsFound()
@@ -455,7 +378,7 @@ public class FootwearPage1 {
 	
 	//
 	
-	@FindBy(xpath="[class^='three-grid-']")
+	@FindBy(css="[class^='three-grid-']")
 	private WebElement threegridview;
 	
 	public WebElement ThreeGridView()
@@ -463,7 +386,7 @@ public class FootwearPage1 {
 		return threegridview;
 	}
 	
-	@FindBy(xpath="[class^='five-grid-']")
+	@FindBy(css="[class^='five-grid-']")
 	private WebElement fivegridview;
 	
 	public WebElement FiveGridView()
