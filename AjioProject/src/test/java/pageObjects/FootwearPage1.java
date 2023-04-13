@@ -3,6 +3,7 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class FootwearPage1 {
 
@@ -10,9 +11,10 @@ public class FootwearPage1 {
 	public FootwearPage1(WebDriver driver) 
 	{
 		this.driver=driver;
+		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//li[contains(@class,'catg active-text')]//div[contains(@class,'column column-1')]//span[contains(text(),'FOOTWEAR')]") 
+	@FindBy(xpath="//a[normalize-space()='Footwear']") 
 	private WebElement footwear;
 	
 	public WebElement FootWear() 

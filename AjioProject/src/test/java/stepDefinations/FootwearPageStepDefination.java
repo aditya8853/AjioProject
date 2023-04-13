@@ -1,6 +1,7 @@
 package stepDefinations;
 
 import java.io.IOException;
+import java.time.Duration;
 
 import org.openqa.selenium.interactions.Actions;
 
@@ -24,12 +25,17 @@ public class FootwearPageStepDefination
 	@Given("^User is on Footwear page$")
 	public void user_is_on_footwear_page() throws IOException
 	{
-		testContextSetup.tb.webDriverManager();
-		testContextSetup.prop.getProperty("url");
+		testContextSetup.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		//testContextSetup.tb.webDriverManager();
+		testContextSetup.driver.get(testContextSetup.prop.getProperty("url"));
+		testContextSetup.driver.manage().window().maximize();
 		LoginPage loginPage=testContextSetup.pgx.getLoginPage();
-		Actions act=new Actions(testContextSetup.driver);
-		act.moveToElement(loginPage.menSection());
 		FootwearPage1 footwearPage=testContextSetup.pgx.getFootwearPage();
+		
+		Actions act=new Actions(testContextSetup.driver);
+		// loginPage.menSection().click();
+		
+		act.moveToElement(loginPage.menSection()).build().perform();;
 		footwearPage.FootWear().click();
 	}
 	

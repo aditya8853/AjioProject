@@ -7,8 +7,10 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -31,7 +33,15 @@ public class TestBase {
 		if(prop.getProperty("browser").equalsIgnoreCase("chrome"))
 		{
 			WebDriverManager.chromedriver().setup();
-			driver=new ChromeDriver();
+			//driver=new ChromeDriver();
+			ChromeOptions op=new ChromeOptions();
+			op.addArguments("--remote-allow-origins=*");
+			//op.addArguments("disable-geolocation");
+			op.addArguments("-disable-notifications");         
+	        //op.addArguments("--ignore-certificate-errors");
+		    driver = new ChromeDriver(op);
+		    
+		    
 			
 		}
 		else if(prop.getProperty("browser").equalsIgnoreCase("edge"))
