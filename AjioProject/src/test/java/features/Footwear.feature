@@ -4,8 +4,10 @@ Feature: Verify Filter Functionality on Footwear Page
 @tag1
 Scenario: Verifying Filter Functionality in Mens Category
 Given User is on Footwear page
-When User Selects the Gender Men, Category Formal and & One Brand
+When User Search the shoes by applying following features
+| Men | Sports | Puma | 50 |
 Then Verify all shoes are displayed are of Selected Brand
+And Discount is greater than or equals to 50%
 
 
 Scenario: Verifying the Size Chart

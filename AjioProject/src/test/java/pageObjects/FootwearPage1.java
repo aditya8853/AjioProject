@@ -395,20 +395,23 @@ public class FootwearPage1 {
 	{
 		return fivegridview;
 	}
-//	@FindBy(xpath="")
-//	private WebElement ;
-//	
-//	public WebElement ()
-//	{
-//		return ;
-//	}
-//	@FindBy(xpath="")
-//	private WebElement ;
-//	
-//	public WebElement ()
-//	{
-//		return ;
-//	}
+	
+	@FindBy(xpath="//ul[1]//li[2]//div[1]//label[1]//span[1]//span[1]")
+	private WebElement puma;
+	
+	public WebElement Puma()
+	{
+		return puma;
+	}
+	
+	@FindBy(xpath="[class$='button--apply']")
+	private WebElement applybtn;
+	
+	public WebElement ApplyBtn()
+	{
+		return applybtn;
+	}
+	
 //	@FindBy(xpath="")
 //	private WebElement ;
 //	
