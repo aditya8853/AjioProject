@@ -13,7 +13,12 @@ When User select multiple items and proceed to place order.
 Then On Order summary Page user is able to verify the addition of cost of all products selected is same as expected.
 
 
-Scenario: Verify the quantity of products
+Scenario Outline: Verify the quantity of products
 Given User is on mens fashion page 
-When User adds the USPA shirt and Leecooper jeans to Cart
+When User adds the <Shirt> and <Jeans> to Cart
 Then Verify that user is able to proceed for checkout and the quantity of products is same as selected
+
+Examples: 
+| Shirt | Jeans |
+| USPA  | Leecooper |
+| Levis | Levis |
